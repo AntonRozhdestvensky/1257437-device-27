@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Антон Рождественский](https://up.htmlacademy.ru/htmlcss/27/user/1257437).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
