@@ -2,9 +2,175 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог - Device</title>
+    <title>Device</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Логотип Divece"></a>
+        <input type="search" name="query" placeholder="Поиск по сайту">
+        <button type="submit"><img src="img/search.png"></button>
 
+        <ul>
+          <li><a href="#">Валентин Петухов</a></li>
+          <li><a href="#">Выйти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+      </ul>
+
+<!-- Левый сайтбар -->
+      <section>
+        <h2>Фильтр:</h2>
+          <ul>
+            <li>
+              <h3>Стоимость</h3>
+              <input type="range" name="price" value="1000" min="0" max="80000">
+            </li>
+            <li></li>
+              <h3>Цвет</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" name="black" id="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="white" id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="blue" id="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="red" id="red" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="pink" id="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Bluetooth</h3>
+              <ul>
+                <li>
+                  <input type="radio" name="bluetooth" id="bluetooth-on" value="on" checked>
+                  <label for="bluetooth-on">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" name="bluetooth-off" id="bluetooth-off" value="off">
+                  <label for="bluetooth-off">Нет</label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#">Показать</a>
+      </section>
+      <section>
+        <h3>Сортировка:</h3>
+        <nav>
+          <ul>
+            <li>По цене</li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#" >По популярности</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" aria-label="сортировать по возрастанию"></a></li>
+            <li><a aria-label="сортировать по убыванию"></a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <h3>Любительская селфи-палка</h3>
+            <img src="#" alt="#">
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
+            <p>500 руб.</p>
+          </li>
+          <li>
+            <h3>Профессиональная селфи-палка </h3>
+            <img src="#" alt="#">
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
+            <p>1 500 руб.</p>
+          </li>
+          <li>
+            <h3>Непотопляемая селфи-палка</h3>
+            <img src="#" alt="#">
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
+            <p>2 500 руб.</p>
+          </li>
+          <li>
+            <h3>Селфи-палка «Следуй за мной»</h3>
+            <img src="#" alt="#">
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
+            <span>NEW</span>
+            <p>4 900 руб.</p>
+          </li>
+        </ul>
+<!-- Пагинация -->
+        <ul>
+          <li><a href="#">Назад</a></li>
+          <li><a href="#">Вперед</a></li>
+          <li>
+            <ul>
+              <li>1</li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>DEVICE</p>
+      <ul>
+        <li><a href="#">Войти</li>
+        <li><a href="#">Сравнить</li>
+        <li><a href="#">Корзина</li>
+      </ul>
+
+    <div>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <ul>
+        <li><a href="#">Доставка</li>
+        <li><a href="#">Гарантия</li>
+        <li><a href="#">Контакты</li>
+      </ul>
+    </div>
+
+    <div>
+      <ul>
+        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <div>
+      <img src="">
+    </div>
+    </footer>
   </body>
 </html>
