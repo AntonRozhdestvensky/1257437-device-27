@@ -80,55 +80,59 @@
 <!-- Левый сайтбар -->
       <aside>
         <h2>Фильтр:</h2>
-        <fieldset>
-          <legend>Стоимость</legend>
-          <ul>
-            <li>
-              <input type="range" name="price" value="1000" min="0" max="80000">
-            </li>
-          </ul>
-        </fieldset>
+          <form class="" action="#" method="post" oninput="cost.value=price.value">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <ul>
+              <li>
+                <input type="range" name="price" id="price" value="1000" min="0" max="80000">
+                <span>От</span>
+                <span><output name="cost"></output></span>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend>Цвет</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="black" id="black" checked>
-              <label for="black">Черный</label>
-            </li>
-            <li>
-              <input type="checkbox" name="white" id="white">
-              <label for="white">Белый</label>
-            </li>
-            <li>
-              <input type="checkbox" name="blue" id="blue" checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li>
-              <input type="checkbox" name="red" id="red" checked>
-              <label for="red">Красный</label>
-            </li>
-            <li>
-              <input type="checkbox" name="pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="black" id="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="white" id="white">
+                <label for="white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="blue" id="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend>Bluetooth</legend>
-          <ul>
-            <li>
-              <input type="radio" name="bluetooth" id="bluetooth-on" value="on" checked>
-              <label for="bluetooth-on">Есть</label>
-            </li>
-            <li>
-              <input type="radio" name="bluetooth-off" id="bluetooth-off" value="off">
-              <label for="bluetooth-off">Нет</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="button" name="button">Показать</button>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" name="bluetooth" id="bluetooth-on" value="on" checked>
+                <label for="bluetooth-on">Есть</label>
+              </li>
+              <li>
+                <input type="radio" name="bluetooth-off" id="bluetooth-off" value="off">
+                <label for="bluetooth-off">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="button" name="button">Показать</button>
+        </form>
       </aside>
 
       <section>
