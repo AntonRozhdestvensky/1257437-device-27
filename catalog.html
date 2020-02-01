@@ -13,9 +13,9 @@
             <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input type="search" id="search" name="query" placeholder="Поиск по сайту">
           </p>
-            <button type="submit"><img src="img/search.png"></button>
+            <button type="submit"><img src="img/search.png" alt="Иконка поиска"></button>
         </form>
-        <ul>
+        <ul aria-label="Напигация по интерфейсу пользователя">
           <li>
               <a href="#">Валентин Петухов</a>
               <a href="#">Выйти</a>
@@ -29,7 +29,7 @@
         </ul>
 
         <!-- Выпадающее меню каталог товаров-->
-        <ul>
+        <ul aria-label="Навикация по каталогу">
           <li>
             <a href="catalog.html">Каталог товаров</a>
               <div>
@@ -55,8 +55,10 @@
                 </ul>
             </div>
           </li>
+        </ul>
         <!-- Конец выпадающее меню каталог товаров-->
-          <li>
+        <ul>
+          <li aria-label="О сайте DEVICE">
             <a href="#">Доставка</a>
           </li>
           <li>
@@ -85,14 +87,14 @@
 <!-- Левый сайтбар -->
       <aside>
         <h2>Фильтр:</h2>
-          <form class="" action="#" method="post" oninput="#">
+          <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Стоимость</legend>
             <ul>
               <li>
                 <input type="range" name="price" id="price" value="1000" min="0" max="80000">
-                <span>От</span>
-                <span>До <output name="#"></output></span>
+                <span>От 0</span>
+                <span>До 80000</span>
               </li>
             </ul>
           </fieldset>
@@ -136,7 +138,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="button" name="button">Показать</button>
+          <button type="submit" name="button">Показать</button>
         </form>
       </aside>
 
@@ -145,8 +147,8 @@
         <nav>
           <ul>
             <li>По цене</li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#" >По популярности</a></li>
+            <li><a href="#" aria-label="сортировать по типу">По типу</a></li>
+            <li><a href="#" aria-label="сортировать по популярности">По популярности</a></li>
           </ul>
           <ul>
             <li><a href="#" aria-label="сортировать по возрастанию"></a></li>
@@ -159,29 +161,29 @@
           <li>
             <h3>Любительская селфи-палка</h3>
             <img src="img/item-1-jpg.png" alt="Любительская селфи-палка" width="360" height="380">
-            <a href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
+            <button type="button" name="button">В корзину</button>
+            <button type="button" name="button">Добавить к сравнению</button>
             <p>500 руб.</p>
           </li>
           <li>
             <h3>Профессиональная селфи-палка</h3>
             <img src="img/item-2-jpg.png" alt="Профессиональная селфи-палка" width="360" height="380">
-            <a href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
+            <button type="button" name="button">В корзину</button>
+            <button type="button" name="button">Добавить к сравнению</button>
             <p>1 500 руб.</p>
           </li>
           <li>
             <h3>Непотопляемая селфи-палка</h3>
             <img src="img/item-3-jpg.png" alt="Непотопляемая селфи-палка" width="360" height="380">
-            <a href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
+            <button type="button" name="button">В корзину</button>
+            <button type="button" name="button">Добавить к сравнению</button>
             <p>2 500 руб.</p>
           </li>
           <li>
             <h3>Селфи-палка «Следуй за мной»</h3>
             <img src="img/item-4-jpg.png" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-            <a href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
+            <button type="button" name="button">В корзину</button>
+            <button type="button" name="button">Добавить к сравнению</button>
             <span>NEW</span>
             <p>4 900 руб.</p>
           </li>
@@ -205,7 +207,7 @@
     <div>
       <p>г. Москва, ул. Строителей, 15</p>
       <p>Тел.: +7 (495) 495-95-95</p>
-      <ul>
+      <ul aria-label="Напигация по интерфейсу пользователя">
         <li>
             <a href="#">Валентин Петухов</a>
             <a href="#">Выйти</a>
@@ -222,18 +224,18 @@
     <div>
       <ul>
         <li>
-          <a href="#"><img src="img/facebook.svg" width="32" height="32"></a>
+          <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Наш facebook"></a>
         </li>
         <li>
-          <a href="#"><img src="img/twitter.svg" width="32" height="32"></a>
+          <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Наш twitter"></a>
         </li>
         <li>
-          <a href="#"><img src="img/instagram.svg" width="32" height="32"></a>
+          <a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Наш instagram"></a>
         </li>
       </ul>
     </div>
     <div>
-      <img src="img/logo-htmlacademy.svg" width="27" height="35">
+      <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy">
     </div>
     </footer>
   </body>
