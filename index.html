@@ -15,7 +15,7 @@
           </p>
             <button type="submit"><img src="img/search.png"></button>
         </form>
-        <ul aria-label="Напигация">
+        <ul aria-label="Напигация по интерфейсу пользователя">
           <li>
             <a href="#">Войти</a>
           </li>
@@ -27,7 +27,7 @@
           </li>
         </ul>
 <!-- Выпадающее меню каталог товаров-->
-        <ul>
+        <ul aria-label="Навикация по каталогу">
           <li>
             <a href="catalog.html">Каталог товаров</a>
               <div>
@@ -54,7 +54,7 @@
               </div>
           </li>
 <!-- Конец выпадающее меню каталог товаров-->
-          <li>
+          <li aria-label="О сайте DEVICE">
             <a href="#">Доставка</a>
           </li>
           <li>
@@ -69,7 +69,7 @@
     <main>
 <!-- Карусель товаров -->
       <section>
-        <img src="#" alt="Палка для селфи">
+        <img src="img\slider-1-png.png" alt="Палка для селфи">
         <h3>Делай селфи, как Бен Стиллер!</h3>
         <p>Самая длинная палка для селфи доступна в нашем магазине.
         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -137,16 +137,16 @@
       <section>
         <ul>
           <li>
-            <a href="#"><img src="img/logo-1-jpg.png" alt="#" width="260" height="110"></a>
+            <a href="#"><img src="img/logo-1-jpg.png" alt="партнер 1" width="260" height="110"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-2-jpg.png" alt="#" width="260" height="110"></a>
+            <a href="#"><img src="img/logo-2-jpg.png" alt="партнер 2" width="260" height="110"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-3-jpg.png" alt="#" width="260" height="110"></a>
+            <a href="#"><img src="img/logo-3-jpg.png" alt="партнер 3" width="260" height="110"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-4-jpg.png" alt="#" width="260" height="110"></a>
+            <a href="#"><img src="img/logo-4-jpg.png" alt="партнер 4" width="260" height="110"></a>
           </li>
         </ul>
       </section>
@@ -167,7 +167,7 @@
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map-jpg.png" alt="карта" width="560" height="222">
+        <img src="img/map-jpg.png" alt="расположение магазина DEVICE" width="560" height="222">
         <a href="#">Напишите нам</a>
       </section>
     </main>
@@ -191,34 +191,34 @@
     <div>
       <ul>
         <li>
-          <a href="#"><img src="img/facebook.svg" width="32" height="32"></a>
+          <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Наш facebook"></a>
         </li>
         <li>
-          <a href="#"><img src="img/twitter.svg" width="32" height="32"></a>
+          <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Наш twitter"></a>
         </li>
         <li>
-          <a href="#"><img src="img/instagram.svg" width="32" height="32"></a>
+          <a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Наш instagram"></a>
         </li>
       </ul>
     </div>
     <div>
-      <img src="img/logo-htmlacademy.svg" width="27" height="35">
+      <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy">
     </div>
     </footer>
 <!-- Popup форма связи -->
     <section>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>Ваше имя:</label>
-          <input type="text" placeholder="Имя Фамилия">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label>Ваш e-mail:</label>
-          <input type="email" placeholder="email@example.com">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" placeholder="email@example.com">
         </p>
         <p>
-          <label>Текст письма:</label>
-          <textarea placeholder="В свободной форме"></textarea>
+          <label for="letter">Текст письма:</label>
+          <textarea id="letter" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
