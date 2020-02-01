@@ -8,8 +8,13 @@
     <header>
       <nav>
         <a href="index.html"><img src="img/device.svg" alt="Логотип Divece" width="164" height="36"></a>
-        <input type="search" name="query" placeholder="Поиск по сайту">
-        <button type="submit"><img src="img/search.png"></button>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
+            <input type="search" id="search" name="query" placeholder="Поиск по сайту">
+          </p>
+            <button type="submit"><img src="img/search.png"></button>
+        </form>
         <ul>
           <li>
               <a href="#">Валентин Петухов</a>
