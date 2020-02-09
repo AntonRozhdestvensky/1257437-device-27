@@ -10,8 +10,22 @@ body {
   color: #464646;
   background-color: #ffffff;
 }
+/* Оформление стилей (ссылки и прочее) */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 
-/* Оформление навигации */
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Оформление навигации (HEADER) */
 .header-container {
   margin-left: auto;
   margin-right: auto;
@@ -31,5 +45,29 @@ body {
 
 .header-logo {
   position: absolute;
-  margin-top: -20px;
+  margin-top: -19px;
+  margin-bottom: 24px;
+}
+
+.main-search {
+  display: flex;
+  min-width: 55px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-search .search-input {
+  border: 0;
+  width: 355px;
+  height: 49px;
+  background-color: transparent;
+  color: #000000;
+  padding-left: 40px;
+  opacity: 0.3;
+}
+
+.main-search .search-input:focus {
+  border-bottom: 2px solid #000000;
+  opacity: 1;
+  outline: 1px transparent;
 }
