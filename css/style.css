@@ -17,3 +17,13 @@ body {
   width: 164px;
   height: 36px;
 }
+
+.user-navigation {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+  font-size: 15px;
+
+  color: #000000;
+}
