@@ -10,52 +10,19 @@ body {
   color: #464646;
   background-color: #ffffff;
 }
-/* Оформление стилей навигации */
-a {
-  text-decoration: none;
-}
 
+/* Оформление навигации */
 .header-container {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
-
   width: 1160px;
 }
 
-.main-header {
-  margin-top: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
-
-  height: 300px;
-
-  background-color: #f7e296;
-}
-
-.main-navigation {
-
-}
-
 .header-logo {
-  top: -19px;
-  margin-bottom: 24px;
-  width: 164px;
-  height: 36px;
-}
-
-.user-navigation {
-  width: 500px;
-  margin: 0;
-  padding: 0;
-  line-height: 36px;
-  font-size: 15px;
-
-  color: #000000;
-}
-
-.site-navigation {
-
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 59px;
 }
