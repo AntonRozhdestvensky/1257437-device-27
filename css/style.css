@@ -11,6 +11,14 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+
+}
+
 .header-logo {
   margin-top: -19px;
   margin-bottom: 24px;
@@ -26,4 +34,8 @@ body {
   font-size: 15px;
 
   color: #000000;
+}
+
+.site-navigation {
+
 }
