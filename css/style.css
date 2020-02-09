@@ -10,3 +10,10 @@ body {
   color: #464646;
   background-color: #ffffff;
 }
+
+.header-logo {
+  margin-top: -19px;
+  margin-bottom: 24px;
+  width: 164px;
+  height: 36px;
+}
