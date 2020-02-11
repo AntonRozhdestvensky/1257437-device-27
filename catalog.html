@@ -7,31 +7,34 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-  <div class="header-container">
+  <div class="container">
     <header class="main-header">
       <a class="header-logo" href="index.html"><img src="img/device.svg" alt="Логотип Divece" width="164" height="36"></a>
-      <nav class="main-navigation">
+
+      <div class="navigation">
         <form class="main-search" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input type="search" class="search-input" id="search" name="query" placeholder="Поиск по сайту">
           </p>
-            <button type="submit" class="visually-hidden">Найти</button>
+            <button type="submit" class="search-button">Найти</button>
         </form>
+
         <ul aria-label="Напигация по интерфейсу пользователя" class="user-navigation">
-          <li>
+          <li class="login-user">
               <a href="#">Валентин Петухов</a>
               <a href="#">Выйти</a>
           </li>
-          <li>
+          <li class="product-comparison">
             <a href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="cart">
             <a href="#">Корзина</a>
           </li>
         </ul>
-
+      </div>
         <!-- Выпадающее меню каталог товаров-->
+        <nav class="main-navigation">
         <ul aria-label="Навикация по каталогу" class="site-navigation">
           <li>
             <a href="catalog.html">Каталог товаров</a>
