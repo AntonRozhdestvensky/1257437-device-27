@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  <div class="header-container">
+  <div class="container">
     <header class="main-header">
       <a class="header-logo" href="index.html"><img src="img/device.svg" alt="Логотип Divece" width="164" height="36"></a>
 
@@ -21,13 +21,13 @@
         </form>
 
         <ul aria-label="Напигация по интерфейсу пользователя" class="user-navigation">
-          <li class="user-navigation-login">
+          <li class="login">
             <a href="#">Войти</a>
           </li>
-          <li class="user-navigation-item">
+          <li class="product-comparison">
             <a href="#">Сравнить</a>
           </li>
-          <li class="user-navigation-item">
+          <li class="cart">
             <a href="#">Корзина</a>
           </li>
         </ul>
@@ -61,7 +61,7 @@
               </div>
           </li>
 <!-- Конец выпадающее меню каталог товаров-->
-          <li aria-label="О сайте DEVICE">
+          <li>
             <a href="#">Доставка</a>
           </li>
           <li>
@@ -99,28 +99,31 @@
         <input type="radio">
       </section>
 <!-- Каталог товаров -->
-      <section>
-        <ul>
-          <li>
-            <a href="#">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="#">Моноподы <br>для селфи</a>
-          </li>
-          <li>
-            <a href="#">Экшн-камеры</a>
-          </li>
-          <li>
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="#">Умные часы</a>
-          </li>
-          <li>
-            <a href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="catalog-item">
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <ul class="catalog-item-list">
+            <li class="item-category">
+              <a href="#" class="item-box">Виртуальная реальность</a>
+            </li>
+            <li class="item-category">
+              <a href="#" class="item-box">Моноподы <br>для селфи</a>
+            </li>
+            <li class="item-category">
+              <a href="#" class="item-box">Экшн-камеры</a>
+            </li>
+            <li class="item-category">
+              <a href="#" class="item-box">Фитнес-браслеты</a>
+            </li>
+            <li class="item-category">
+              <a href="#" class="item-box">Умные часы</a>
+            </li>
+            <li class="item-category">
+              <a href="#" class="item-box">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
+      </div>
 <!-- Наши преимущества -->
       <section>
         <ul>
