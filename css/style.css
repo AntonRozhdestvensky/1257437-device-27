@@ -24,3 +24,11 @@ body {
 a {
   text-decoration: none;
 }
+
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
