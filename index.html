@@ -10,16 +10,16 @@
   <div class="header-container">
     <header class="main-header">
       <a class="header-logo" href="index.html"><img src="img/device.svg" alt="Логотип Divece" width="164" height="36"></a>
-      <nav class="main-navigation">
+
+      <div class="navigation"
         <form class="main-search" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input type="search" class="search-input" id="search" name="query" placeholder="Поиск по сайту">
           </p>
-            <button type="submit" class="search-button">Найти</button>
         </form>
         <ul aria-label="Напигация по интерфейсу пользователя" class="user-navigation">
-          <li class="user-navigation-item">
+          <li class="user-navigation-login">
             <a href="#">Войти</a>
           </li>
           <li class="user-navigation-item">
@@ -29,7 +29,9 @@
             <a href="#">Корзина</a>
           </li>
         </ul>
+      </div>
 <!-- Выпадающее меню каталог товаров-->
+      <nav class="main-navigation">
         <ul aria-label="Навикация по каталогу" class="site-navigation">
           <li>
             <a href="catalog.html">Каталог товаров</a>
