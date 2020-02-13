@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -10,7 +24,7 @@ body {
   color: #464646;
   background-color: #ffffff;
 }
-/* Оформление стилей (ссылки и прочее) */
+/* Оформление стилей (ссылки, отступы и прочее) */
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -35,4 +49,259 @@ a {
   padding-right: 20px;
 }
 
-/* Оформление шапки сайта */
+/*
+ Оформление шапки сайта
+========================
+*/
+
+/* Оформление поиска по сайту */
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  height: 299px;
+  background-color: #f7e296;
+}
+
+.header-logo {
+  margin-top: -19px;
+  margin-bottom: 24px;
+  width: 164px;
+  height: 36px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.main-search {
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  width: 441px;
+  height: 49px;
+  top: -15px;
+}
+
+.main-search input {
+  height: 49px;
+  width: 356px;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 39px;
+  padding-bottom: 11px;
+  border: 0;
+
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 36px;
+  font-weight: 300;
+  opacity: 0.3;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+}
+
+.main-search::before {
+  content: "";
+
+  position: absolute;
+  top: 27px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+/* Оформление навигации пользователя */
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.user-navigation a {
+  display: block;
+}
+
+.login {
+  margin-right: 16px;
+}
+
+.user {
+  position: relative;
+  padding-left: 25px;
+}
+
+.user::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 0px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+}
+
+.product-comparison {
+  margin-left: auto;
+}
+
+.comparison {
+  position: relative;
+  padding-left: 27px;
+}
+
+.comparison::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 6px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+}
+
+.product-cart {
+  margin-left: 37px;
+}
+
+.cart {
+  position: relative;
+  padding-left: 25px;
+}
+
+.cart::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 4px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Оформление навигации сайта */
+.main-navigation li {
+  list-style: none;
+}
+
+.main-navigation {
+  margin-bottom: 38px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.catalog-item {
+  position: relative;
+  width: 540px;
+  margin-left: 0;
+}
+
+.catalog-drop::after {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: 221px;
+  z-index: 1;
+
+  width: 16px;
+  height: 16px;
+  margin-left: 9px;
+
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.catalog-item:hover .second-catalog {
+  display: flex;
+}
+
+.second-catalog a {
+  display: block;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.second-catalog li {
+  margin-left: 60px;
+}
+
+.second-catalog {
+  display: none;
+  position: absolute;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+
+  width: 1160px;
+  height: 140px;
+
+  top: 20px;
+  left: -60px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  background: #f7e296;
+
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.second-catalog li:nth-child(4) > a {
+  margin-bottom: 40px;
+}
+
+.delivery {
+  margin-left: -50px;
+}
