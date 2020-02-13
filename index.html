@@ -5,6 +5,7 @@
     <title>Device - Главная страница</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body>
   <div class="container">
@@ -53,30 +54,37 @@
     </header>
   </div>
 
-    <main>
+    <main class="main">
 <!-- Карусель товаров -->
-      <section>
-        <img src="img/slider-1-png.png" alt="Палка для селфи">
-        <h3>Делай селфи, как Бен Стиллер!</h3>
-        <p>Самая длинная палка для селфи доступна в нашем магазине.
-        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a href="#">Подробнее</a>
-        <table>
-          <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
-          </tr>
-          <tr>
-            <th>Длина палки</th>
-            <th>Вес палки</th>
-            <th>Материал</th>
-          </tr>
-        </table>
+    <div class="container">
+      <section class="slider">
+        <div class="slide-1">
+          <img src="img/slider-1-png.png" alt="Палка для селфи">
+          <div class="text-block">
+            <h3 class="slider-title">Делай селфи,<br> как Бен Стиллер!</h3>
+            <span>01</span>
+            <p class="discription">Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a href="#">Подробнее</a>
+            <table>
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+            </table>
+          </div>
+        </div>
         <input type="radio" checked>
         <input type="radio">
         <input type="radio">
       </section>
+    </div>
 <!-- Каталог товаров -->
       <div class="container">
         <section class="catalog-item">
