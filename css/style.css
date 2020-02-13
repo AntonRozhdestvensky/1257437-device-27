@@ -391,14 +391,11 @@ a {
 
 .slider-title::after {
   content: "";
-
   position: absolute;
   top: -42px;
   left: 0;
-
   width: 100px;
   height: 7px;
-
   background-color: #ffffff;
 }
 
@@ -412,7 +409,7 @@ a {
 
 .text-block span {
   position: absolute;
-  top: -12px;
+  top: -120px;
   right: 50px;
 
   font-family: "Gilroy", Tahoma, sans-serif;
@@ -423,5 +420,5 @@ a {
 }
 
 .discription {
-  margin: 0;
+  margin-bottom: 43px;
 }
