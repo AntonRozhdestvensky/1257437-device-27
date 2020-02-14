@@ -49,6 +49,13 @@ a {
   padding-right: 20px;
 }
 
+.user-navigation a:hover,
+.main-navigation a:hover,
+.user-navigation a:focus,
+.main-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /*
  Оформление шапки сайта
 ========================
