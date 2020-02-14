@@ -444,3 +444,132 @@ a {
   right: 60px;
   margin: 0;
 }
+
+/* Каталог товаров */
+.catalog-item-block li {
+  list-style: none;
+
+}
+
+.catalog-item-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.catalog-item-list-block {
+  display: flex;
+  padding-left: 0;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  line-height: normal;
+}
+
+.item-category-block {
+  order: 2;
+  width: 160px;
+  margin-left: 40px;
+  display: inline-block;
+  background-color: rgba(240,197,46,.5);
+}
+
+.item-category-block:first-child {
+  margin-left: 0;
+}
+
+.item-box-block {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  background-color: #ffe294;
+
+}
+
+.popular-2 {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-2.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popular-3 {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-3.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popular-4 {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-4.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popular-5 {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-5.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popular-6 {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-6.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popular-1 {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-1.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
+
+
+
+
+
+/* Оформление блока партнеров */
+.partners li {
+  list-style: none;
+}
+
+.partners-item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+/* Оформлени блока О НАС */
