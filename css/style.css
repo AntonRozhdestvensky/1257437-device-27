@@ -563,10 +563,44 @@ a {
 
 
 
+/* Оформлени блока СЕРВИС */
+.info h3 {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+
+}
+
+.info li {
+  list-style: none;
+}
+
+.content-info {
+  font-family: "OpenSans", Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #464646;
+}
 
 
+.info-navigation {
+  position: relative;
+width: 280px;
 
-/* Оформление блока партнеров */
+margin-top: -19px;
+
+
+font-family: "Gilroy", Tahoma, sans-serif;
+font-size: 18px;
+letter-spacing: 0.2em;
+line-height: normal;
+font-weight: 800;
+text-transform: uppercase;
+color: #000000;
+}
+
+
+/* Оформление блока ПАРТНЕРЫ */
 .partners li {
   list-style: none;
 }
@@ -577,4 +611,69 @@ a {
   position: relative;
 }
 
-/* Оформлени блока О НАС */
+/* Оформление блока О НАС */
+.company h2 {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+
+}
+
+.company p {
+  font-family: "OpenSans", Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 300;
+  color: #464646;
+}
+
+
+/* Оформление Подвала */
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.footer-logo {
+  margin-top: -9px;
+  margin-left: -3px;
+}
+
+.footer-user-navigation {
+  width: 328px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 36px;
+  text-align: right;
+}
+
+.footer-site-navigation {
+   font-family: "Gilroy", Tahoma, sans-serif;
+   font-size: 18px;
+   font-weight: 800;
+   line-height: 1.33;
+   letter-spacing: 3.6px;
+   text-align: left;
+   list-style: none;
+}
+
+.footer-site-navigation a {
+  color: #ffffff;
+}
+
+.adress {
+  color: #ffffff;
+}

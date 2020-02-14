@@ -128,20 +128,25 @@
 <!-- Наши преимущества -->
     <div class="container">
       <section class="info">
+        <div class="info-navigation">
+             <label class="more-button">Доставка</label>
+             <label class="more-button">Гарантия</label>
+             <label class="more-button">Кредит</label>
+        </div>
         <ul>
           <li>
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            <p class="content-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li>
             <h3>Гарантия</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            <p class="content-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li>
             <h3>Кредит</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            <p class="content-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
         </ul>
@@ -171,7 +176,7 @@
     <div class="container">
       <section class="company">
       <div class="about-us">
-        <h2 class="company-title">О нас</h2>
+        <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul>
@@ -192,41 +197,49 @@
     </div>
     </main>
 
-    <footer>
-      <a class="footer-logo" href="#"><img src="img/yellow-device.svg" width="163" height="35" alt="Логотип Divece"></a>
+    <footer class="main-footer">
+      <div class="footer-container">
+        <a class="footer-logo" href="#"><img src="img/yellow-device.svg" width="163" height="35" alt="Логотип Divece"></a>
 
-    <div>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <p>Тел.: +7 (495) 495-95-95</p>
-      <ul>
-        <li>
-          <a href="#">Войти</a></li>
-        <li>
-          <a href="#">Сравнить</a></li>
-        <li>
-          <a href="#">Корзина</a></li>
-      </ul>
-    </div>
+        <div class="footer-first-line">
+          <ul class="footer-user-navigation">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
 
-    <div>
-      <ul>
-        <li>
-          <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Наш facebook"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Наш twitter"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Наш instagram"></a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <img src="img/yellow-logo-html.svg" width="27" height="35" alt="htmlacademy">
-    </div>
+        <div class="footer-second-line">
+          <p class="adress">г. Москва, ул. Строителей, 15</p>
+          <p class="adress">Тел.: +7 (495) 495-95-95</p>
+          <ul class="footer-site-navigation">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Наш facebook"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Наш twitter"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Наш instagram"></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="img/yellow-logo-html.svg" width="27" height="35" alt="htmlacademy">
+        </div>
+      </div>
     </footer>
 <!-- Popup форма связи -->
-    <section class="modal">
+    <section class="modal visually-hidden">
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name">Ваше имя:</label>
