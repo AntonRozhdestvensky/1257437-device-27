@@ -387,7 +387,6 @@ a {
 
 .slider-title {
   position: relative;
-  top: -47px;
   margin-bottom: 0;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
@@ -395,6 +394,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.01em;
   color: #000000;
+  margin-top: 82px;
 }
 
 .slider-title::after {
@@ -408,18 +408,14 @@ a {
 }
 
 .text-block {
-  display: block;
-  order: 2;
   width: 560px;
   padding: 0;
-  margin-top: 82px;
 }
 
 .text-block span {
   position: absolute;
   top: -12px;
   right: 50px;
-
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 179px;
   line-height: 179px;
@@ -428,12 +424,50 @@ a {
 }
 
 .discription {
-  margin-bottom: 43px;
+  margin-top: 23px;
+  margin-bottom: 45px;
   width: 490px;
 }
 
 .more-button {
+  display: inline-block;
+  position: relative;
 
+  width: 210px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  padding: 9px 5px;
+  margin-bottom: 52px;
+}
+
+.more-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  height: 8px;
+  transform: translateY(-50%);
+  background-color: #f0c52e;
+  transition: height .3s ease-in-out;
+  z-index: -1;
+}
+
+.more-button:hover::after,
+.more-button:focus::after {
+  height: 100%;
+}
+
+.more-button:active {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -460,12 +494,15 @@ a {
 
 .catalog-item-list-block {
   display: flex;
+  justify-content: space-between;
+  position: relative;
   padding-left: 0;
+  line-height: normal;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: 800;
   font-size: 18px;
   color: #000000;
-  line-height: normal;
+  height: 338px;
 }
 
 .item-category-block {
@@ -481,8 +518,16 @@ a {
   margin-left: 0;
 }
 
-.item-category-block span {
-  margin-top: 195px;
+.catalog-item-list-block h3 {
+  order: 2;
+  font-size: 18px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  letter-spacing: .01em;
+  line-height: normal;
+  font-weight: 800;
+  vertical-align: top;
+
+
 }
 
 .item-box-block {
@@ -490,9 +535,28 @@ a {
   flex-direction: column;
   width: 160px;
   background-color: #ffe294;
+
 }
 
-.popular-2 {
+.item-box-block:hover::after,
+.item-box-block:focus::after {
+  background-color: #f0c52e;
+}
+
+.popular-1::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  background-image: url("../img/popular-1.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  z-index: 1;
+}
+
+.popular-2::after {
   content: "";
   position: absolute;
   width: 160px;
@@ -502,9 +566,11 @@ a {
   background-image: url("../img/popular-2.svg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
+
+  z-index: 1;
 }
 
-.popular-3 {
+.popular-3::after {
   content: "";
   position: absolute;
   width: 160px;
@@ -513,9 +579,11 @@ a {
   background-image: url("../img/popular-3.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  z-index: 1;
 }
 
-.popular-4 {
+.popular-4::after {
   content: "";
   position: absolute;
   width: 160px;
@@ -524,9 +592,11 @@ a {
   background-image: url("../img/popular-4.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  z-index: 1;
 }
 
-.popular-5 {
+.popular-5::after {
   content: "";
   position: absolute;
   width: 160px;
@@ -535,9 +605,11 @@ a {
   background-image: url("../img/popular-5.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  z-index: 1;
 }
 
-.popular-6 {
+.popular-6::after {
   content: "";
   position: absolute;
   width: 160px;
@@ -546,20 +618,9 @@ a {
   background-image: url("../img/popular-6.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  z-index: 1;
 }
-
-.popular-1 {
-  content: "";
-  position: absolute;
-  width: 160px;
-  height: 160px;
-
-  background-image: url("../img/popular-1.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-
 
 
 
@@ -585,18 +646,18 @@ a {
 
 .info-navigation {
   position: relative;
-width: 280px;
+  width: 280px;
 
-margin-top: -19px;
+  margin-top: -19px;
 
 
-font-family: "Gilroy", Tahoma, sans-serif;
-font-size: 18px;
-letter-spacing: 0.2em;
-line-height: normal;
-font-weight: 800;
-text-transform: uppercase;
-color: #000000;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 
@@ -629,7 +690,6 @@ color: #000000;
 
 
 /* Оформление Подвала */
-
 .main-footer {
   background-color: #464646;
 }
@@ -676,4 +736,12 @@ color: #000000;
 
 .adress {
   color: #ffffff;
+}
+
+.social {
+
+}
+
+.academy {
+
 }
