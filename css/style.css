@@ -526,7 +526,7 @@ a {
   line-height: normal;
   font-weight: 800;
   vertical-align: top;
-
+  margin-top: 0px;
 
 }
 
@@ -543,7 +543,7 @@ a {
   background-color: #f0c52e;
 }
 
-.popular-1::after {
+.popular-1::before {
   content: "";
   position: absolute;
   width: 160px;
@@ -556,7 +556,7 @@ a {
   z-index: 1;
 }
 
-.popular-2::after {
+.popular-2::before {
   content: "";
   position: absolute;
   width: 160px;
@@ -570,7 +570,7 @@ a {
   z-index: 1;
 }
 
-.popular-3::after {
+.popular-3::before {
   content: "";
   position: absolute;
   width: 160px;
@@ -583,7 +583,7 @@ a {
   z-index: 1;
 }
 
-.popular-4::after {
+.popular-4::before {
   content: "";
   position: absolute;
   width: 160px;
@@ -596,7 +596,7 @@ a {
   z-index: 1;
 }
 
-.popular-5::after {
+.popular-5::before {
   content: "";
   position: absolute;
   width: 160px;
@@ -609,7 +609,7 @@ a {
   z-index: 1;
 }
 
-.popular-6::after {
+.popular-6::before {
   content: "";
   position: absolute;
   width: 160px;
