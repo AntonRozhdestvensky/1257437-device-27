@@ -95,11 +95,120 @@ li {
   line-height: 36px;
 }
 
-/* Конец оформление шапки сайта */
+.main-navigation {
+  margin-bottom: 38px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.catalog-item {
+  position: relative;
+  min-width: 540px;
+  margin-left: 0;
+}
+
+.catalog-drop::after {
+  content: "";
+
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: 9px;
+
+
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.second-catalog {
+  display: none;
+  position: absolute;
+  z-index: 3;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 36px;
+  font-weight: 300;
+
+  width: 1160px;
+  height: 140px;
+
+  top: 20px;
+  left: -60px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  background: #f7e296;
+}
+
+.catalog-item:hover .second-catalog {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-left: 60px;
+}
+
+.second-catalog a {
+  letter-spacing: normal;
+  text-transform: none;
+}
 
 /* Начало оформление слайдера*/
+.slider {
+  position: relative;
+  width: 1160px;
+  max-height: 497px;
+  margin-bottom: 107px;
+  padding: 0;
+}
 
-/* Конец оформление слайдера*/
+.text-block {
+  width: 560px;
+  padding: 0;
+}
+
+.slider-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-1 img {
+  margin-left: 89px;
+  margin-top: -109px;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.slider-title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
 
 /* Начало оформление категорий*/
 
