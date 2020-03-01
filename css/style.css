@@ -768,10 +768,13 @@ a {
   position: relative;
 }
 
+
 .category-content:hover,
 .selfie-stick:hover {
   background-color: rgba(240,197, 46, 1);
 }
+
+
 
 .category-image {
   position: absolute;
@@ -788,12 +791,16 @@ a {
   left: 38px;
 }
 
-.category-image:active,
-.selfie-stick:active,
-.category-item:active p {
-  opacity: 0.3;
+.category-link:hover .category-content,
+.category-link:focus .category-content {
+  background-color: rgba(240, 197, 46, 1);
 }
 
+.category-link:active .category-image,
+.category-link:active .category-title,
+.category-link:active .selfie-stick {
+  opacity: 0.3;
+}
 
 
 .category-title {
