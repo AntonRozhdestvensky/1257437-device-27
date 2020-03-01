@@ -274,7 +274,7 @@
             <h3>Контакты</h3>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <a class="main-map" href="#"><img src="./img/map.png" alt="г. Москва, ул. Строителей, 15" width="560" height="222"></a>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button contactsForm" href="#">Напишите нам</a>
           </section>
         </section>
       </div>
@@ -318,25 +318,26 @@
 -->
     <section class="contact-form">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-        <button class="contact-form-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="contact-form-close close-form" type="button"><span class="visually-hidden">Закрыть</span></button>
         <div class="contact-form-elements">
           <form class="contact-form-popup" method="POST" action="https://echo.htmlacademy.ru">
             <div class="contact-form-info">
               <label for="for-username">Ваше имя:</label>
-              <input type="text" id="for-username" name="username" required="required" placeholder="Имя Фамилия" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+              <input type="text" id="for-username" name="username" required="required" placeholder="Имя Фамилия">
             </div>
             <div class="contact-form-info">
               <label for="user-email">Ваш e-mail:</label>
-              <input type="text" id="user-email" name="email" required="required" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+              <input type="text" id="user-email" name="email" required="required" placeholder="email@example.com">
             </div>
             <div class="contact-form-text">
               <label for="text">Текст письма:</label>
-              <textarea id="text" name="text-input" placeholder="В свободной форме">
+              <textarea id="text" name="text-input" cols="30" rows="10" placeholder="В свободной форме">
               </textarea>
             </div>
             <button class="button" type="submit">Отправить</button>
           </form>
         </div>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>

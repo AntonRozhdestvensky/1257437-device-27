@@ -279,7 +279,7 @@ a {
   font-size: 0;
 }
 
-.search-input:focus::plcontact-form
+.search-input:focus::placeholder {
   font-size: 0;
 }
 
@@ -476,7 +476,7 @@ a {
 }
 
 .warranty {
-  padding-right: 114px;
+  margin-right: auto;
 }
 
 
@@ -1204,6 +1204,7 @@ a {
   padding-left: 0;
   padding-right: 300px;
   position: relative;
+  width: 540px;
 }
 
 .catalog-link:hover {
@@ -2621,9 +2622,11 @@ a {
   line-height: 3.5;
 }
 
-.contact-form-popup input:invalid {
+/* почему-то не работает корректно
+.contact-form-info input:invalid {
   background-color: #f6dada;
 }
+*/
 
 .contact-form-text {
   padding-bottom: 36px;
