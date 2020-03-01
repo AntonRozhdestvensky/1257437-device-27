@@ -323,16 +323,15 @@
           <form class="contact-form-popup" method="POST" action="https://echo.htmlacademy.ru">
             <div class="contact-form-info">
               <label for="for-username">Ваше имя:</label>
-              <input type="text" id="for-username" name="username" required="required" placeholder="Имя Фамилия">
+              <input type="text" id="for-username" name="username"  value="" placeholder="Имя Фамилия" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
             </div>
             <div class="contact-form-info">
               <label for="user-email">Ваш e-mail:</label>
-              <input type="text" id="user-email" name="email" required="required" placeholder="email@example.com">
+              <input type="email" id="user-email" name="email"  value="" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
             <div class="contact-form-text">
               <label for="text">Текст письма:</label>
-              <textarea id="text" name="text-input" cols="30" rows="10" placeholder="В свободной форме">
-              </textarea>
+              <textarea id="text" name="text-input" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </div>
             <button class="button" type="submit">Отправить</button>
           </form>

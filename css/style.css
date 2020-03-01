@@ -2536,7 +2536,7 @@ a {
   outline: none;
 }
 
-.contact-form-elements input[type=text] {
+.contact-form-elements input {
   width: 360px;
   height: 50px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -2622,11 +2622,12 @@ a {
   line-height: 3.5;
 }
 
-/* почему-то не работает корректно
-.contact-form-info input:invalid {
+
+
+.contact-form-popup input[type=email]:invalid,
+.contact-form-popup input[name="username"]:invalid {
   background-color: #f6dada;
 }
-*/
 
 .contact-form-text {
   padding-bottom: 36px;
@@ -2680,6 +2681,7 @@ a {
   letter-spacing: normal;
   color: rgba(70, 70, 70, 0.4);
 }
+
 .contact-form textarea::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
