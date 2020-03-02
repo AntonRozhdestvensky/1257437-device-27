@@ -587,12 +587,17 @@ a {
 }
 
 .description-first p {
-  width: 490px;
+  min-width: 490px;
+  max-height: 60px;
+  overflow: auto;
+
 }
 
 .description-second p,
 .description-third p {
   width: 460px;
+  max-height: 60px;
+  overflow: auto;
 }
 
 .slider-description .button {
