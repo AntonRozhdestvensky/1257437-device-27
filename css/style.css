@@ -2489,7 +2489,8 @@ a {
   animation-duration: 1s;
 }
 
-.contact-form-close {
+.contact-form-close,
+.popup-map-close {
   height: 60px;
   width: 60px;
   background: url("../img/modal-close.svg") no-repeat;
@@ -2721,6 +2722,32 @@ a {
 .contact-form-info {
   padding-bottom: 43px;
 }
+
+/* Карта сайта */
+.popup-map {
+  position: fixed;
+  display: none;
+  width: 960px;
+  height: 559px;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  background-color: #565656;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.popup-map-activate {
+  display: block;
+}
+
 
 .main-breadcrumbs {
   margin: 0;
