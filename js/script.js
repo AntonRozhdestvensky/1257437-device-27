@@ -7,22 +7,22 @@ const popupMapOpen = document.querySelector('.openMap');
 const mapOpen = document.querySelector('.popup-map');
 const mapClose = document.querySelector('.close-map');
 // Вычисления формы связи
-contactFormOpen.addEventListener("click", eventForm => {
-  eventForm.preventDefault();
+contactFormOpen.addEventListener("click", function(event) {
+  event.preventDefault();
   formPopup.classList.add('contact-form-activate');
 });
 
-formClose.addEventListener("click", eventForm => {
-  eventForm.preventDefault();
+formClose.addEventListener("click", function(event) {
+  event.preventDefault();
   formPopup.classList.remove('contact-form-activate');
 });
 // Вычисления карта сайта
-popupMapOpen.addEventListener("click", eventForm => {
-  eventForm.preventDefault();
+popupMapOpen.addEventListener("click", function(event) {
+  event.preventDefault();
   mapOpen.classList.add('popup-map-activate');
 });
 
-mapClose.addEventListener("click", eventForm => {
-  eventForm.preventDefault();
+mapClose.addEventListener("click", function(event) {
+  event.preventDefault();
   mapOpen.classList.remove('popup-map-activate');
 });
