@@ -718,6 +718,7 @@ a {
   display: block;
   margin: 0;
   padding: 0;
+  padding-top: 9px;
 
   font-size: 13px;
   font-weight: 300;
@@ -729,6 +730,7 @@ a {
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
+  padding-top: 4px;
 
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 36px;
@@ -843,7 +845,7 @@ a {
 .services::before {
   content: "";
   position: absolute;
-  top: 163px;
+  top: 145px;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -856,7 +858,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 118px;
+  padding-bottom: 135px;
 }
 
 .services-option {
@@ -866,13 +868,13 @@ a {
   order: 2;
   width: 460px;
   margin-left: 120px;
-  padding-top: 136px;
+  padding-top: 121px;
 }
 
 .services-delivery::before {
   content: "";
   position: absolute;
-  top: 148px;
+  top: 132px;
   right: -234px;
   z-index: 0;
   width: 136px;
@@ -933,17 +935,17 @@ a {
 .slider-title {
   position: relative;
 
-  padding-top: 142px;
+  padding-top: 125px;
   padding-right: 120px;
 }
 
 .slider-title::before {
   content: "";
   position: absolute;
-  top: 63px;
+  top: 46px;
   right: -4px;
   width: 7px;
-  height: calc(100% - 15px);
+  height: 319px;
   background-color: #000000;
 }
 
@@ -968,7 +970,7 @@ a {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 3.6px;
 }
 
 .title-value::before {
@@ -1116,6 +1118,7 @@ a {
   font-style: normal;
   font-stretch: normal;
   color: #000000;
+  letter-spacing: 0.47px;
 }
 
 .brands-list {
@@ -2080,7 +2083,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 52px;
+  padding-top: 70px;
   padding-bottom: 79px;
 }
 
@@ -2242,7 +2245,7 @@ a {
 }
 
 .footer-navigation {
-  padding-top: 70px;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2386,6 +2389,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .footer-other-list {
@@ -2395,6 +2399,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-left: 0px;
 }
 
 .footer-other-link {
@@ -2494,7 +2499,7 @@ a {
   width: 176px;
   height: 32px;
   top: 49px;
-  left: 50%;
+  left: 48.5%;
 }
 
 .footer-social > a {
