@@ -356,6 +356,10 @@ a {
   padding-right: 238px;
 }
 
+.header-username {
+  position: relative;
+}
+
 .header-login:hover,
 .header-username:hover,
 .header-login:hover::before,
@@ -372,18 +376,6 @@ a {
   opacity: 0.3;
 }
 
-.header-login::before {
-  position: absolute;
-  bottom: 9px;
-  left: -26px;
-  content: "";
-  background: url("../img/user.svg") no-repeat;
-  height: 12px;
-  width: 13px;
-}
-
-
-
 .header-username,
 .footer-username {
   padding-right: 20px;
@@ -394,7 +386,8 @@ a {
   opacity: 0.3;
 }
 
-.header-login::before {
+.header-login::before,
+.header-username::before {
   position: absolute;
   bottom: 9px;
   left: -26px;
@@ -489,7 +482,7 @@ a {
 }
 
 
-.main-navigation > li > a {
+.main-navigation > a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -497,7 +490,6 @@ a {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 3.6px;
-  text-align: right;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1156,48 +1148,48 @@ a {
 }
 
 .dji {
-  background-image: url("../img/dji-gray.png");
+  background-image: url("../img/dji-gray.jpg");
 }
 
 .dji:hover,
 .dji:focus {
-  background-image: url("../img/dji.png");
+  background-image: url("../img/dji.jpg");
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 0.3s linear;
 }
 
 .spg {
-  background-image: url("../img/spg-gray.png");
+  background-image: url("../img/spg-gray.jpg");
 }
 
 .spg:hover,
 .spg:focus {
-  background-image: url("../img/spg.png");
+  background-image: url("../img/spg.jpg");
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 0.3s linear;
 }
 
 .gopro {
-  background-image: url("../img/gopro-gray.png");
+  background-image: url("../img/gopro-gray.jpg");
 }
 
 .gopro:hover,
 .gopro:focus {
-  background-image: url("../img/gopro.png");
+  background-image: url("../img/gopro.jpg");
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 0.3s linear;
 }
 
 .vive {
-  background-image: url("../img/vive-gray.png");
+  background-image: url("../img/vive-gray.jpg");
 }
 
 .vive:hover,
 .vive:focus {
-  background-image: url("../img/vive.png");
+  background-image: url("../img/vive.jpg");
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 0.3s linear;
@@ -1257,7 +1249,7 @@ a {
 
   width: 1160px;
   padding-top: 26px;
-  padding-bottom: 0;
+  padding-bottom: 30px;
   padding-left: 60px;
   background-color: #f7e296;
   min-height: 149px;
@@ -1396,6 +1388,20 @@ a {
 
 .filter-checkbox-input:checked + .filter-checkbox-label::before {
   display: none;
+}
+
+.filter-checkbox-input:checked:disabled ~ .filter-checkbox-label::after,
+.filter-radio-button:checked:disabled ~ .filter-radio-label::after {
+  opacity: 0.25;
+}
+
+input[disabled].filter-checkbox-input:disabled ~ .filter-checkbox-label::before,
+input[disabled].filter-checkbox-input:disabled ~ .filter-checkbox-label:active::after,
+input[disabled].filter-checkbox-input:checked:disabled ~ .filter-checkbox-label::before,
+input[disabled].filter-checkbox-input:checked:disabled ~ .filter-checkbox-label:active::after,
+input[disabled].filter-radio-button:disabled ~ .filter-radio-label::before,
+input[disabled].filter-radio-button:checked:disabled ~ .filter-radio-label:active::after {
+  opacity: 0.25;
 }
 
 .filter-checkbox-label:hover::before,
@@ -2414,7 +2420,7 @@ a {
   opacity: 0.3;
 }
 
-.footer-other-list > li > a {
+.footer-other-list a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -2847,7 +2853,7 @@ ul.breadcrumbs li+li:before {
   content: url("../img/nav-arrow.svg");
 }
 
-ul.breadcrumbs li a {
+ul.breadcrumbs a {
   text-decoration: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -2860,7 +2866,7 @@ ul.breadcrumbs li a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-ul.breadcrumbs li a:hover {
+.breadcrumbs a:hover {
   text-decoration: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
